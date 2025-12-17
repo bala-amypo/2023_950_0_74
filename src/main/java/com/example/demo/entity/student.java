@@ -1,27 +1,29 @@
-package com.example.
-import java.time.LocalDate;
+import jakarta.persistence.*;
+
 public class student{
-    private int id;
+    @ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private INTEGER id;
     private String name;
     private String email;
-    private String id;
+
     public int getId(){
         return id;
-    }
-    public void setId(int id){
-        this.id=id;
     }
     public String getName(){
         return name;
     }
-    public void setName(String name){
-        this.name=name;
-    }
     public String getEmail(){
         return email;
+    }
+    public void setId(int id){
+        this.id=id;
+    }
+    public void setName(String name){
+        this.name=name;
     }
     public void setEmail(String email){
         this.email=email;
     }
-    public int get
+
 }
